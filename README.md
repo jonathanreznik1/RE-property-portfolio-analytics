@@ -21,12 +21,15 @@ For additional technical details, see:
 - docs/data_pipeline.md
 - docs/data_quality_assessment.md 
 
-## Visualize
+## Dashboards
 Tableau dashboards were connected directly to PostgreSQL reporting views.
 
 Dashboards include:
 1. Property Portfolio Performance Dashboard
-3. Market Performance Analysis Dashboard
+   <img width="1285" height="705" alt="image" src="https://github.com/user-attachments/assets/e8ab9d80-d668-4ffe-9337-fc06281b810d" />
+
+2. Market Performance Analysis Dashboard
+   <img width="1124" height="680" alt="image" src="https://github.com/user-attachments/assets/5f3a1e8b-a272-49d4-a537-e3ffa26f3f5e" />
 
 ## Key Business Metrics
 * Revenue
