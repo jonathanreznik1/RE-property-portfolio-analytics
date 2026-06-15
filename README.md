@@ -59,4 +59,4 @@ Dashboards include:
 * Occupancy Rate
 
 ## Tableau Public Dashboard
-[View Interactive Dashboard on Tableau Public]https://public.tableau.com/app/profile/jonathan.reznik/viz/MultifamilyPropertyPortfolioAnalytics/Dashboard1
+[View Interactive Dashboard on Tableau Public](https://public.tableau.com/app/profile/jonathan.reznik/viz/MultifamilyPropertyPortfolioAnalytics/Dashboard1)
