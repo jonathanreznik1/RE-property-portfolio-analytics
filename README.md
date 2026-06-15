@@ -18,6 +18,7 @@ Raw property, occupancy, and financial data were imported from CSV files into Po
 
 The reporting layer calculates key business metrics including Net Operating Income (NOI) and Occupancy Rate. These views serve as the data source for Tableau dashboards used to analyze portfolio and market performance.
 
+```text
 Raw CSV Files
         ↓
 PostgreSQL Staging Tables
@@ -29,7 +30,7 @@ Transformation Views
 Reporting Views
         ↓
 Tableau Dashboards
-
+```
 For additional technical details, see:
 - docs/data_pipeline.md
 - docs/data_quality_assessment.md 
