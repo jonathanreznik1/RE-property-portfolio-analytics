@@ -5,6 +5,8 @@
 *.hyper
 *.twbx
 *.twb
+*.twbr
+.~*.twbr
 
 # PostgreSQL backups
 *.backup
