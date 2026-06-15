@@ -3,6 +3,8 @@
 
 # Tableau
 *.hyper
+*.twbx
+*.twb
 
 # PostgreSQL backups
 *.backup

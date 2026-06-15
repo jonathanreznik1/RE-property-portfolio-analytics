@@ -1,0 +1,2113 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0603.1643                               -->
+<workbook original-version='18.1' source-build='2026.2.0 (20262.26.0603.1643)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='MultifamilyPropertyPortfolioAnalytics' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='vw_property_performance (property_db)' inline='true' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4leaf'>
+            <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Multifamily Project v1.twb Files/vw_property_performance (property_db).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='06/15/2026 01:05:22 AM' username='tableau_internal_user' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4leaf' name='vw_property_performance' table='[public].[vw_property_performance]' type='table' />
+        <refresh>
+          <refresh-event add-from-file-path='vw_property_performance (property_db)' increment-value='%null%' refresh-type='create' rows-inserted='49' timestamp-start='2026-06-15 01:05:22.635' />
+        </refresh>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>property_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[property_name]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>property_name</remote-alias>
+            <ordinal>0</ordinal>
+            <family>vw_property_performance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>14</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[vw_property_performance_4035AEF289514638888A5C0BF7F96969]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>market</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[market]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>market</remote-alias>
+            <ordinal>1</ordinal>
+            <family>vw_property_performance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[vw_property_performance_4035AEF289514638888A5C0BF7F96969]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>2</ordinal>
+            <family>vw_property_performance</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>4</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[vw_property_performance_4035AEF289514638888A5C0BF7F96969]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <family>vw_property_performance</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>48</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[vw_property_performance_4035AEF289514638888A5C0BF7F96969]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>expenses</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[expenses]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>expenses</remote-alias>
+            <ordinal>4</ordinal>
+            <family>vw_property_performance</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>34</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[vw_property_performance_4035AEF289514638888A5C0BF7F96969]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>noi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[noi]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>noi</remote-alias>
+            <ordinal>5</ordinal>
+            <family>vw_property_performance</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>47</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[vw_property_performance_4035AEF289514638888A5C0BF7F96969]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occupied_units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[occupied_units]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>occupied_units</remote-alias>
+            <ordinal>6</ordinal>
+            <family>vw_property_performance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>38</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[vw_property_performance_4035AEF289514638888A5C0BF7F96969]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>units</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[units]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>units</remote-alias>
+            <ordinal>7</ordinal>
+            <family>vw_property_performance</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>10</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[vw_property_performance_4035AEF289514638888A5C0BF7F96969]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occupancy_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[occupancy_rate]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>occupancy_rate</remote-alias>
+            <ordinal>8</ordinal>
+            <family>vw_property_performance</family>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>36</approx-count>
+            <contains-null>true</contains-null>
+            <object-id>[vw_property_performance_4035AEF289514638888A5C0BF7F96969]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Total Expenses' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[Calculation_1719510653165568]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([expenses])' />
+      </column>
+      <column caption='Total Revenue' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[Calculation_1719510653317121]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([revenue])' />
+      </column>
+      <column caption='Total NOI' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[Calculation_1719510653579266]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM([noi])' />
+      </column>
+      <column caption='Average Occupancy' datatype='real' default-format='p0.0%' name='[Calculation_1719510653661187]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([Calculation_2260608293515265])' />
+      </column>
+      <column caption='Occupancy Rate (%)' datatype='real' default-format='p0.0%' name='[Calculation_2260608293515265]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[occupancy_rate]/100' />
+      </column>
+      <column caption='vw_property_performance' datatype='table' name='[__tableau_internal_object_id__].[vw_property_performance_4035AEF289514638888A5C0BF7F96969]' role='measure' type='quantitative' />
+      <column caption='Expenses' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[expenses]' role='measure' type='quantitative' />
+      <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+      <column caption='Month' datatype='string' name='[month]' role='dimension' type='nominal' />
+      <column caption='Noi' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[noi]' role='measure' type='quantitative' />
+      <column caption='Occupancy Rate' datatype='real' name='[occupancy_rate]' role='measure' type='quantitative' />
+      <column caption='Occupied Units' datatype='integer' name='[occupied_units]' role='measure' type='quantitative' />
+      <column caption='Property Name' datatype='string' name='[property_name]' role='dimension' type='nominal' />
+      <column caption='Revenue' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[revenue]' role='measure' type='quantitative' />
+      <column caption='Units' datatype='integer' name='[units]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[vw_property_performance_4035AEF289514638888A5C0BF7F96969]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:vw_property_performance_4035AEF289514638888A5C0BF7F96969:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_2260608293515265]' derivation='Avg' name='[avg:Calculation_2260608293515265:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_2260608293515265]' derivation='Sum' name='[sum:Calculation_2260608293515265:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[expenses]' derivation='Sum' name='[sum:expenses:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[noi]' derivation='Sum' name='[sum:noi:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[occupancy_rate]' derivation='Sum' name='[sum:occupancy_rate:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[occupied_units]' derivation='Sum' name='[sum:occupied_units:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[units]' derivation='Sum' name='[sum:units:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1719510653165568]' derivation='User' name='[usr:Calculation_1719510653165568:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1719510653317121]' derivation='User' name='[usr:Calculation_1719510653317121:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1719510653579266]' derivation='User' name='[usr:Calculation_1719510653579266:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1719510653661187]' derivation='User' name='[usr:Calculation_1719510653661187:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/Multifamily Project v1.twb Files/vw_property_performance (property_db).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>property_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[property_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>property_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>vw_property_performance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>market</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[market]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>market</remote-alias>
+              <ordinal>1</ordinal>
+              <family>vw_property_performance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>2</ordinal>
+              <family>vw_property_performance</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revenue</remote-alias>
+              <ordinal>3</ordinal>
+              <family>vw_property_performance</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>expenses</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[expenses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>expenses</remote-alias>
+              <ordinal>4</ordinal>
+              <family>vw_property_performance</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>noi</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[noi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>noi</remote-alias>
+              <ordinal>5</ordinal>
+              <family>vw_property_performance</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occupied_units</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[occupied_units]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occupied_units</remote-alias>
+              <ordinal>6</ordinal>
+              <family>vw_property_performance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>units</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[units]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>units</remote-alias>
+              <ordinal>7</ordinal>
+              <family>vw_property_performance</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occupancy_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[occupancy_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occupancy_rate</remote-alias>
+              <ordinal>8</ordinal>
+              <family>vw_property_performance</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:revenue:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653661187:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:occupancy_rate:qk]&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:units:qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653165568:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[avg:Calculation_2260608293515265:qk]&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:Calculation_2260608293515265:qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[__tableau_internal_object_id__].[cnt:vw_property_performance_4035AEF289514638888A5C0BF7F96969:qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:occupied_units:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653579266:qk]&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:Calculation_2260608270598144:qk]&quot;</bucket>
+            </map>
+            <map to='#fbb04e'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:expenses:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653317121:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='vw_property_performance' id='vw_property_performance_4035AEF289514638888A5C0BF7F96969'>
+            <properties context=''>
+              <relation connection='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4leaf' name='vw_property_performance' table='[public].[vw_property_performance]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='KPI - Avg Occupancy'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Avg Occupancy</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Average Occupancy' datatype='real' default-format='p0.0%' name='[Calculation_1719510653661187]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([Calculation_2260608293515265])' />
+            </column>
+            <column caption='Occupancy Rate (%)' datatype='real' default-format='p0.0%' name='[Calculation_2260608293515265]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[occupancy_rate]/100' />
+            </column>
+            <column caption='Occupancy Rate' datatype='real' name='[occupancy_rate]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1719510653661187]' derivation='User' name='[usr:Calculation_1719510653661187:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' value='26' />
+            <format attr='text-align' value='center' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653661187:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{573D6F6B-374F-4533-9012-2EF935A9D893}' />
+    </worksheet>
+    <worksheet name='KPI - Total Expenses'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Total Expenses</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Total Expenses' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[Calculation_1719510653165568]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([expenses])' />
+            </column>
+            <column caption='Expenses' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[expenses]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1719510653165568]' derivation='User' name='[usr:Calculation_1719510653165568:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' value='26' />
+            <format attr='text-align' value='center' />
+            <format attr='text-format' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653165568:qk]' value='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653165568:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{89E9E095-8CDD-419B-B649-83BB2EDA0E96}' />
+    </worksheet>
+    <worksheet name='KPI - Total NOI'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Total NOI</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Total NOI' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[Calculation_1719510653579266]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([noi])' />
+            </column>
+            <column caption='Noi' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[noi]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1719510653579266]' derivation='User' name='[usr:Calculation_1719510653579266:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' value='26' />
+            <format attr='text-align' value='center' />
+            <format attr='text-format' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653579266:qk]' value='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' />
+            <format attr='font-style' data-class='subtotal' value='normal' />
+            <format attr='font-weight' data-class='subtotal' value='normal' />
+            <format attr='font-family' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653579266:qk]' value='Tableau Semibold' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653579266:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{2373CF3E-923B-4162-8189-C0971DC0EBF8}' />
+    </worksheet>
+    <worksheet name='KPI - Total Revenue'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontsize='12'>Total Revenue</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Total Revenue' datatype='real' default-format='c&quot;$&quot;#,##0;-&quot;$&quot;#,##0' name='[Calculation_1719510653317121]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM([revenue])' />
+            </column>
+            <column caption='Revenue' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[revenue]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1719510653317121]' derivation='User' name='[usr:Calculation_1719510653317121:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-size' value='26' />
+            <format attr='text-align' value='center' />
+            <format attr='text-format' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653317121:qk]' value='c&quot;$&quot;#,##0,,.00M;-&quot;$&quot;#,##0,,.00M' />
+            <format attr='font-family' data-class='subtotal' value='Tableau Bold' />
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='font-weight' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653317121:qk]' value='normal' />
+            <format attr='font-family' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653317121:qk]' value='Tableau Semibold' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653317121:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[usr:Calculation_1719510653317121:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{599D2CC1-1294-4D1E-87EA-00FFAFB6A798}' />
+    </worksheet>
+    <worksheet name='Viz - Market Share'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Bold' fontsize='13'>Revenue Share and NOI by Market</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column caption='Noi' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[noi]' role='measure' type='quantitative' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Revenue' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[revenue]' role='measure' type='quantitative' />
+            <column-instance column='[noi]' derivation='Sum' name='[sum:noi:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='553' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' max='500000.0' min='170000.0' palette='green_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' />
+              <size column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:revenue:qk]' />
+              <text column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:market:nk]' />
+              <text column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run><![CDATA[<[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:market:nk]>
+]]></run>
+                <run bold='true'>NOI:</run>
+                <run><![CDATA[ <[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D5F31036-1EF3-44E0-A095-F5A5B04E57DB}' />
+    </worksheet>
+    <worksheet name='Viz - NOI (Market)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Bold' fontsize='13'>Net Operating Income by Market</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column caption='Noi' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[noi]' role='measure' type='quantitative' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column-instance column='[noi]' derivation='Sum' name='[sum:noi:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:market:nk]' direction='DESC' using='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:market:nk]</rows>
+        <cols>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]</cols>
+      </table>
+      <simple-id uuid='{469F9259-84C3-4077-B052-D71169B8F768}' />
+    </worksheet>
+    <worksheet name='Viz - NOI (Property)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='13'>Net Operating Income by Property</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Noi' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[noi]' role='measure' type='quantitative' />
+            <column-instance column='[property_name]' derivation='None' name='[none:property_name:nk]' pivot='key' type='nominal' />
+            <column caption='Property Name' datatype='string' name='[property_name]' role='dimension' type='nominal' />
+            <column-instance column='[noi]' derivation='Sum' name='[sum:noi:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:property_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' scope='cols' value='' />
+            <format attr='display' class='0' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' scope='cols' value='true' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' value='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-color' value='#67ad5b' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:property_name:nk]</rows>
+        <cols>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]</cols>
+      </table>
+      <simple-id uuid='{92B22844-7D06-4AF9-A284-800359A0E1D8}' />
+    </worksheet>
+    <worksheet name='Viz - Occupance (Market)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Bold' fontsize='13'>Occupancy Rate by Market</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Occupancy Rate (%)' datatype='real' default-format='p0.0%' name='[Calculation_2260608293515265]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[occupancy_rate]/100' />
+            </column>
+            <column-instance column='[Calculation_2260608293515265]' derivation='Avg' name='[avg:Calculation_2260608293515265:qk]' pivot='key' type='quantitative' />
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Occupancy Rate' datatype='real' name='[occupancy_rate]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[avg:Calculation_2260608293515265:qk]' scope='cols' value='' />
+            <encoding attr='space' class='0' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[avg:Calculation_2260608293515265:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.02' max='1.01' min='0.80000000000000004' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:market:nk]</rows>
+        <cols>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[avg:Calculation_2260608293515265:qk]</cols>
+      </table>
+      <simple-id uuid='{C602D679-6BBD-44BF-B566-AFE6EA24C234}' />
+    </worksheet>
+    <worksheet name='Viz - Occupancy (Property)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='13'>Occupancy Rate by Property</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Occupancy Rate (%)' datatype='real' default-format='p0.0%' name='[Calculation_2260608293515265]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[occupancy_rate]/100' />
+            </column>
+            <column-instance column='[Calculation_2260608293515265]' derivation='Avg' name='[avg:Calculation_2260608293515265:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[property_name]' derivation='None' name='[none:property_name:nk]' pivot='key' type='nominal' />
+            <column caption='Occupancy Rate' datatype='real' name='[occupancy_rate]' role='measure' type='quantitative' />
+            <column caption='Property Name' datatype='string' name='[property_name]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_2260608293515265]' derivation='Sum' name='[sum:Calculation_2260608293515265:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:property_name:nk]' direction='DESC' using='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:Calculation_2260608293515265:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[avg:Calculation_2260608293515265:qk]' field-type='quantitative' major-origin='0.0' major-spacing='0.050000000000000003' max='0.99960000000000004' min='0.80000000000000004' range-type='fixed' scope='cols' type='space' />
+            <format attr='title' class='0' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[avg:Calculation_2260608293515265:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:Calculation_2260608293515265:qk]' value='p0%' />
+            <format attr='text-format' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[avg:Calculation_2260608293515265:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:property_name:nk]</rows>
+        <cols>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[avg:Calculation_2260608293515265:qk]</cols>
+      </table>
+      <simple-id uuid='{CE4AB260-C44C-441E-94DC-11B0CEC1AF66}' />
+    </worksheet>
+    <worksheet name='Viz - Revenue (Market)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#000000' fontname='Tableau Bold' fontsize='13'>Revenue by Market</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Market' datatype='string' name='[market]' role='dimension' type='nominal' />
+            <column-instance column='[market]' derivation='None' name='[none:market:nk]' pivot='key' type='nominal' />
+            <column caption='Revenue' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[revenue]' role='measure' type='quantitative' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:revenue:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:revenue:qk]</rows>
+        <cols>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:market:nk]</cols>
+      </table>
+      <simple-id uuid='{0075A097-25C5-4B28-8E49-2700CFBB7817}' />
+    </worksheet>
+    <worksheet name='Viz - Revenue/Expenses (Property)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='13'>Revenue vs Expenses by Property</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='vw_property_performance (property_db)' name='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4'>
+            <column caption='Expenses' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[expenses]' role='measure' type='quantitative' />
+            <column-instance column='[property_name]' derivation='None' name='[none:property_name:nk]' pivot='key' type='nominal' />
+            <column caption='Property Name' datatype='string' name='[property_name]' role='dimension' type='nominal' />
+            <column caption='Revenue' datatype='real' default-format='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' name='[revenue]' role='measure' type='quantitative' />
+            <column-instance column='[expenses]' derivation='Sum' name='[sum:expenses:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[revenue]' derivation='Sum' name='[sum:revenue:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:revenue:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:expenses:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:revenue:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:expenses:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <computed-sort column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:property_name:nk]' direction='DESC' using='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:revenue:qk]' />
+          <slices>
+            <column>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[Multiple Values]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:property_name:nk]' value='140' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[Multiple Values]' value='c&quot;$&quot;#,##0,K;-&quot;$&quot;#,##0,K' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[none:property_name:nk] / [federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[:Measure Names])</rows>
+        <cols>[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[Multiple Values]</cols>
+      </table>
+      <simple-id uuid='{6D89C5F7-AB2B-4147-B586-824D7C9EAEC2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='16125' id='5' param='horz' type-v2='layout-flow' w='98400' x='800' y='8875'>
+            <zone fixed-size='32' h='13000' id='25' is-fixed='true' type-v2='empty' w='4000' x='800' y='8875'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='225' h='13000' id='20' is-fixed='true' param='vert' type-v2='layout-flow' w='21100' x='4800' y='8875'>
+              <zone fixed-size='22' h='3750' id='11' is-fixed='true' type-v2='text' w='20700' x='5000' y='9125'>
+                <formatted-text>
+                  <run fontalignment='1' fontsize='12'>Total Revenue</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='62' h='8750' id='3' is-fixed='true' name='KPI - Total Revenue' show-title='false' w='20700' x='5000' y='12875'>
+                <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#e6e6e6' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='2' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='12' h='13000' id='23' is-fixed='true' type-v2='empty' w='2000' x='25900' y='8875'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='225' h='13000' id='46' is-fixed='true' param='vert' type-v2='layout-flow' w='21100' x='27900' y='8875'>
+              <zone fixed-size='22' forceUpdate='true' h='3750' id='48' is-fixed='true' type-v2='text' w='20700' x='28100' y='9125'>
+                <formatted-text>
+                  <run fontalignment='1' fontsize='12'>Total Expense</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='62' h='8750' id='47' is-fixed='true' name='KPI - Total Expenses' show-title='false' w='20700' x='28100' y='12875'>
+                <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#e6e6e6' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='2' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='12' h='13000' id='45' is-fixed='true' type-v2='empty' w='2000' x='49000' y='8875'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='225' h='13000' id='21' is-fixed='true' param='vert' type-v2='layout-flow' w='21100' x='51000' y='8875'>
+              <zone fixed-size='22' h='3750' id='12' is-fixed='true' type-v2='text' w='20700' x='51200' y='9125'>
+                <formatted-text>
+                  <run fontalignment='1' fontsize='12'>Total NOI</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='62' h='8750' id='7' is-fixed='true' name='KPI - Total NOI' show-title='false' w='20700' x='51200' y='12875'>
+                <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#e6e6e6' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='2' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='12' h='13000' id='24' is-fixed='true' type-v2='empty' w='2000' x='72100' y='8875'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='225' h='13000' id='22' is-fixed='true' param='vert' type-v2='layout-flow' w='21100' x='74100' y='8875'>
+              <zone fixed-size='22' h='3750' id='13' is-fixed='true' type-v2='text' w='20700' x='74300' y='9125'>
+                <formatted-text>
+                  <run fontalignment='1' fontsize='12'>Average Occupancy</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='62' h='8750' id='8' is-fixed='true' name='KPI - Avg Occupancy' show-title='false' w='20700' x='74300' y='12875'>
+                <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#e6e6e6' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='2' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='32' h='13000' id='26' is-fixed='true' type-v2='empty' w='4000' x='95200' y='8875'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin-bottom' value='25' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='7875' id='19' type-v2='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>Property Portfolio Performance Dashboard</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='74000' id='35' param='vert' type-v2='layout-flow' w='98400' x='800' y='25000'>
+            <zone h='24666' id='33' name='Viz - NOI (Property)' w='98400' x='800' y='25000'>
+              <layout-cache fixed-size-h='348' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-bottom' value='25' />
+              </zone-style>
+            </zone>
+            <zone h='24666' id='36' name='Viz - Revenue/Expenses (Property)' w='98400' x='800' y='49666'>
+              <layout-cache fixed-size-h='629' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+                <format attr='margin-bottom' value='25' />
+              </zone-style>
+            </zone>
+            <zone h='24668' id='34' name='Viz - Occupancy (Property)' w='98400' x='800' y='74332'>
+              <layout-cache fixed-size-h='348' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='70' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='69' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='7875' id='19' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>Property Portfolio Performance Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='22' h='3750' id='11' type-v2='text' w='20700' x='5000' y='9125'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='12'>Total Revenue</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='22' forceUpdate='true' h='3750' id='48' type-v2='text' w='20700' x='28100' y='9125'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='12'>Total Expense</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='22' h='3750' id='12' type-v2='text' w='20700' x='51200' y='9125'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='12'>Total NOI</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='22' h='3750' id='13' type-v2='text' w='20700' x='74300' y='9125'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='12'>Average Occupancy</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='8750' id='3' is-fixed='true' name='KPI - Total Revenue' show-title='false' w='20700' x='5000' y='12875'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='8750' id='47' is-fixed='true' name='KPI - Total Expenses' show-title='false' w='20700' x='28100' y='12875'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='8750' id='7' is-fixed='true' name='KPI - Total NOI' show-title='false' w='20700' x='51200' y='12875'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='62' h='8750' id='8' is-fixed='true' name='KPI - Avg Occupancy' show-title='false' w='20700' x='74300' y='12875'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='168' h='24666' id='33' is-fixed='true' name='Viz - NOI (Property)' w='98400' x='800' y='25000'>
+                  <layout-cache fixed-size-h='348' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='169' h='24666' id='36' is-fixed='true' name='Viz - Revenue/Expenses (Property)' w='98400' x='800' y='49666'>
+                  <layout-cache fixed-size-h='629' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='189' h='24668' id='34' is-fixed='true' name='Viz - Occupancy (Property)' w='98400' x='800' y='74332'>
+                  <layout-cache fixed-size-h='348' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{25E8F2B8-AA29-43C1-B66C-FAC675D0439C}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#00000000' />
+        </style-rule>
+      </style>
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='8125' id='5' type-v2='text' w='98400' x='800' y='1000'>
+            <formatted-text>
+              <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>Market Performance Analysis Dashboard</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='22625' id='7' name='Viz - NOI (Market)' w='98400' x='800' y='22625'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+              <format attr='margin-bottom' value='25' />
+            </zone-style>
+          </zone>
+          <zone h='26375' id='10' name='Viz - Market Share' w='98400' x='800' y='72625'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='27375' id='15' param='horz' type-v2='layout-flow' w='98400' x='800' y='45250'>
+            <zone fixed-size='492' h='24250' id='8' is-fixed='true' name='Viz - Revenue (Market)' w='49200' x='800' y='45250'>
+              <layout-cache minheight='203' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='492' h='24250' id='9' is-fixed='true' name='Viz - Occupance (Market)' w='49200' x='50000' y='45250'>
+              <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin-bottom' value='25' />
+            </zone-style>
+          </zone>
+          <zone h='13500' id='32' param='horz' type-v2='layout-flow' w='98400' x='800' y='9125'>
+            <zone fixed-size='32' h='10375' id='31' is-fixed='true' type-v2='empty' w='4000' x='800' y='9125'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='215' h='10375' id='23' is-fixed='true' param='vert' type-v2='layout-flow' w='21100' x='4800' y='9125'>
+              <zone fixed-size='22' forceUpdate='true' h='3750' id='24' is-fixed='true' type-v2='text' w='20700' x='5000' y='9375'>
+                <formatted-text>
+                  <run fontalignment='1' fontsize='12'>Total Revenue</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='62' h='6125' id='19' is-fixed='true' name='KPI - Total Revenue' show-title='false' w='20700' x='5000' y='13125'>
+                <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#e6e6e6' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='2' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='12' h='10375' id='34' is-fixed='true' type-v2='empty' w='2000' x='25900' y='9125'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='215' h='10375' id='25' is-fixed='true' param='vert' type-v2='layout-flow' w='21100' x='27900' y='9125'>
+              <zone fixed-size='22' forceUpdate='true' h='3750' id='26' is-fixed='true' type-v2='text' w='20700' x='28100' y='9375'>
+                <formatted-text>
+                  <run fontalignment='1' fontsize='12'>Total Expenses</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='62' h='6125' id='20' is-fixed='true' name='KPI - Total Expenses' show-title='false' w='20700' x='28100' y='13125'>
+                <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#e6e6e6' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='2' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='12' h='10375' id='35' is-fixed='true' type-v2='empty' w='2000' x='49000' y='9125'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='215' h='10375' id='27' is-fixed='true' param='vert' type-v2='layout-flow' w='21100' x='51000' y='9125'>
+              <zone fixed-size='22' forceUpdate='true' h='3750' id='28' is-fixed='true' type-v2='text' w='20700' x='51200' y='9375'>
+                <formatted-text>
+                  <run fontalignment='1' fontsize='12'>Total NOI</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='62' h='6125' id='21' is-fixed='true' name='KPI - Total NOI' show-title='false' w='20700' x='51200' y='13125'>
+                <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#e6e6e6' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='2' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='12' h='10375' id='36' is-fixed='true' type-v2='empty' w='2000' x='72100' y='9125'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='215' h='10375' id='29' is-fixed='true' param='vert' type-v2='layout-flow' w='21100' x='74100' y='9125'>
+              <zone fixed-size='22' forceUpdate='true' h='3750' id='30' is-fixed='true' type-v2='text' w='20700' x='74300' y='9375'>
+                <formatted-text>
+                  <run fontalignment='1' fontsize='12'>Average Occupancy</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='62' h='6125' id='22' is-fixed='true' name='KPI - Avg Occupancy' show-title='false' w='20700' x='74300' y='13125'>
+                <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#e6e6e6' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='2' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='32' h='10375' id='33' is-fixed='true' type-v2='empty' w='4000' x='95200' y='9125'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin-bottom' value='25' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='54' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='53' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone forceUpdate='true' h='8125' id='5' type-v2='text' w='98400' x='800' y='1000'>
+                  <formatted-text>
+                    <run fontcolor='#000000' fontname='Tableau Bold' fontsize='22'>Market Performance Analysis Dashboard</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='22' forceUpdate='true' h='3750' id='24' type-v2='text' w='20700' x='5000' y='9375'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='12'>Total Revenue</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='22' forceUpdate='true' h='3750' id='26' type-v2='text' w='20700' x='28100' y='9375'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='12'>Total Expenses</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='22' forceUpdate='true' h='3750' id='28' type-v2='text' w='20700' x='51200' y='9375'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='12'>Total NOI</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='22' forceUpdate='true' h='3750' id='30' type-v2='text' w='20700' x='74300' y='9375'>
+                  <formatted-text>
+                    <run fontalignment='1' fontsize='12'>Average Occupancy</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='6125' id='19' is-fixed='true' name='KPI - Total Revenue' show-title='false' w='20700' x='5000' y='13125'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='6125' id='20' is-fixed='true' name='KPI - Total Expenses' show-title='false' w='20700' x='28100' y='13125'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='6125' id='21' is-fixed='true' name='KPI - Total NOI' show-title='false' w='20700' x='51200' y='13125'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='41' h='6125' id='22' is-fixed='true' name='KPI - Avg Occupancy' show-title='false' w='20700' x='74300' y='13125'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='152' h='22625' id='7' is-fixed='true' name='Viz - NOI (Market)' w='98400' x='800' y='22625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='186' h='24250' id='8' is-fixed='true' name='Viz - Revenue (Market)' w='49200' x='800' y='45250'>
+                  <layout-cache minheight='203' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='186' h='24250' id='9' is-fixed='true' name='Viz - Occupance (Market)' w='49200' x='50000' y='45250'>
+                  <layout-cache minwidth='180' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='203' h='26375' id='10' is-fixed='true' name='Viz - Market Share' w='98400' x='800' y='72625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E554F869-F471-4A92-964C-D997C96273C9}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='Dashboard 1' tab-color='#f66273'>
+      <viewpoints>
+        <viewpoint name='KPI - Avg Occupancy'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total Expenses'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total NOI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Viz - NOI (Property)' />
+        <viewpoint name='Viz - Occupancy (Property)' />
+        <viewpoint name='Viz - Revenue/Expenses (Property)' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0D9F19CE-2F65-4B6F-968B-80AAAAD40C36}' />
+    </window>
+    <window class='worksheet' name='KPI - Total Revenue' tab-color='#a65200'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0CBFD663-CDAA-449C-9206-EA53370992DC}' />
+    </window>
+    <window class='worksheet' name='KPI - Total Expenses' tab-color='#a65200'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{65BD3F5A-0378-49AD-9BB6-C37F7896CF2B}' />
+    </window>
+    <window class='worksheet' name='KPI - Total NOI' tab-color='#a65200'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5EE212DB-A3DF-4B7D-8CAF-5E67F659C882}' />
+    </window>
+    <window class='worksheet' name='KPI - Avg Occupancy' tab-color='#a65200'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6A489A9A-35BD-4618-B621-384794C4EB72}' />
+    </window>
+    <window class='worksheet' name='Viz - NOI (Property)' tab-color='#6e597f'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A17FD2A7-6994-4F47-BB48-3A3508D98D93}' />
+    </window>
+    <window class='worksheet' name='Viz - Revenue/Expenses (Property)' tab-color='#6e597f'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{226CEABD-2FC1-471B-BA38-669657338BAE}' />
+    </window>
+    <window class='worksheet' name='Viz - Occupancy (Property)' tab-color='#6e597f'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D7AEA141-BAF6-4832-B023-A080E79C8A65}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='KPI - Avg Occupancy'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total Expenses'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total NOI'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI - Total Revenue'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Viz - Market Share' />
+        <viewpoint name='Viz - NOI (Market)' />
+        <viewpoint name='Viz - Occupance (Market)' />
+        <viewpoint name='Viz - Revenue (Market)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F5F94EB6-7145-4ECE-8139-6651C715D56F}' />
+    </window>
+    <window class='worksheet' name='Viz - NOI (Market)' tab-color='#6e597f'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A7E8904C-AEF1-454D-953E-93CA6351F4B4}' />
+    </window>
+    <window class='worksheet' name='Viz - Revenue (Market)' tab-color='#6e597f'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ABACBD0D-38BA-4C27-9392-49DE7E301211}' />
+    </window>
+    <window class='worksheet' name='Viz - Occupance (Market)' tab-color='#6e597f'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C2660C9D-645B-4A42-B534-4879EDA2EF8C}' />
+    </window>
+    <window class='worksheet' name='Viz - Market Share' tab-color='#6e597f'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1sjmlfh1ooqbnv1cxd1nq0o05sw4].[sum:noi:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ECCA2959-B2D4-4B65-8BFE-BFEEB63F772B}' />
+    </window>
+  </windows>
+</workbook>
